@@ -3,7 +3,7 @@ Contributors: tsunoa, rubengc
 Tags: tsunoa, rubengc, easy, digital, downloads, easy digital downloads, download, product, edd, ajax, filter, filters, ajax filters, ajax filter, edd ajax filters, edd ajax, edd filter, search, blog
 Requires at least: 4.0
 Tested up to: 4.8
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -104,6 +104,10 @@ If you have created your own language pack, or have an update for an existing on
 
 == Changelog ==
 
+= 1.0.1 =
+
+* Fixed issue with filters cache.
+
 = 1.0.0 =
 
-* Initial release
+* Initial release.

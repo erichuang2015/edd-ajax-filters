@@ -4,7 +4,6 @@
     var animation_interval; // Running animation interval
     var wait_for_animation_interval; // Wait for animation interval
 
-    var cached_filters;
     var cached_atts;
 
     // Filter taxonomy all
@@ -64,16 +63,11 @@
             container.addClass('edd-ajax-filters-loading');
 
             // Filters
-            if( cached_filters === undefined ) {
-                // Get all active filters
-                var filters = [];
+            var filters = [];
 
-                $('.edd-ajax-filter').each(function () {
-                    edd_ajax_filters_pass_filter(filters, $(this));
-                });
-
-                cached_filters = filters;
-            }
+            $('.edd-ajax-filter').each(function () {
+                edd_ajax_filters_pass_filter(filters, $(this));
+            });
 
             // Atts
             if( cached_atts === undefined ) {
@@ -113,7 +107,7 @@
                 data: {
                     action: 'edd_ajax_filters',
                     nonce: edd_ajax_filters.nonce,
-                    filters: cached_filters,
+                    filters: filters,
                     shortcode_atts: cached_atts,
                     paged: shortcode_form.find('input[name="paged"]').val()
                 },

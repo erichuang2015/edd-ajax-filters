@@ -3,7 +3,7 @@
  * Plugin Name:     EDD Ajax Filters
  * Plugin URI:      https://wordpress.org/plugins/edd-ajax-filters
  * Description:     Live products filtering for Easy Digital Downloads.
- * Version:         1.0.0
+ * Version:         1.0.1
  * Author:          Tsunoa
  * Author URI:      https://tsunoa.com
  * Text Domain:     edd-ajax-filters
